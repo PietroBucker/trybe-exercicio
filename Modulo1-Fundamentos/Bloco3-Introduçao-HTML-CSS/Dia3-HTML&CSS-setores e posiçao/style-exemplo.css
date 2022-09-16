@@ -1,9 +1,10 @@
 .caixa {
     color: white;
     display: inline-block;
-    line-height: 60px;
+    line-height: 10px;
     text-align: center;
     vertical-align: top;
+    margin-left: 50px;
   }
   
   .width-and-height {
@@ -13,7 +14,7 @@
   
   /* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
   .padding {
-   padding: 20px;
+   padding: 10px;
   }
   
   /* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
@@ -26,25 +27,44 @@
   .border {
     border: 10px solid black;
   }
-  ul{
-    align-items: baseline;
-  }
+ 
+
+            /* secao exemplo 2 */
   .super-mario {
     width: 200px;
+    position: absolute;
+    z-index: 1;
   }
   
   .goomba {
     width: 100px;
+    position: absolute;
+    z-index: 2;
+    top: 500px;
+    left: 100px;
   }
   
   .baloon {
-  
+    position: absolute;
+    z-index: 3;
+    transform: scaleX(-1);
+    left: 300px;
+    
   }
   
   .speech {
+    color: red;
     font-size: 25px;
+    position: absolute;
+    z-index: 5;
+    left: 330px;
+    top: 230px;
   }
   
   .bowser {
     width: 200px;
+    position: absolute;
+    z-index: 4;
+    left: 300px;
+    top: 400px;
   }
