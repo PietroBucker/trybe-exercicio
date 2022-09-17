@@ -1,0 +1,16 @@
+#title{
+  text-align: center;
+}
+
+#paragraph{
+  text-align: center;
+}
+li:hover{
+  color: rgb(252, 10, 10);
+}
+li:active{
+  font-family: monospace;
+}
+li{
+  list-style: none;
+}
