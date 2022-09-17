@@ -1,0 +1,33 @@
+.back-color{
+    background-color: aquamarine;
+}
+ol{
+    background-color: yellow;
+}
+.transform{
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+h1, h2{
+    color: red;
+
+}
+li{
+    font-size: 20px;
+    
+}
+
+#list-cor{
+    color: blue;
+}
+    
+.skill-cor{
+    background-color: pink;
+}
+
+a:hover{
+    text-decoration: none;
+    color: aliceblue;
+    
+}
