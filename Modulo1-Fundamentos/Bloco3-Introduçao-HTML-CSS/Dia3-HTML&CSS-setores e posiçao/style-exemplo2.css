@@ -1,0 +1,40 @@
+/* exemplo 2 */
+#title{
+  text-align: center;
+}
+
+#paragraph{
+  text-align: center;
+}
+li:hover{
+  color: rgb(252, 10, 10);
+}
+li:active{
+  font-family: monospace;
+}
+li{
+  list-style: none;
+}
+  /* exemplo 3 */
+
+div:hover{
+  border: 2px solid crimson;
+  width: 50%;
+}
+#div1{
+  border-color: aqua;
+}
+#div2{
+  border-color: rgb(125, 24, 219);
+}
+#div3{
+  border-color: rgb(32, 221, 126);
+  width: 600px;
+  font-size: 40px;
+}
+h3{
+  font-family: monospace;
+}
+.impar{
+  font-style: italic;
+}
