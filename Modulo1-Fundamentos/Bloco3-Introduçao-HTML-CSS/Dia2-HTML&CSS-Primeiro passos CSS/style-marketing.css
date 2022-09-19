@@ -1,0 +1,51 @@
+body{
+    font-family: Montserrat, sans-serif;
+}
+h1{
+    font-size: 45px;
+    font-weight: 600px;
+    line-height: 55px;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+.header{
+    background-image: url("./imagem-market/smiling-image.jpg");
+    background-size: cover;
+    background-position: 50% 25%;
+    padding: 60px 30px 40px;
+    border: 2px solid red;
+
+}
+.header-content{
+    border: 2px solid red;
+    width: 50%;
+}
+.header-content p{
+    width: 80%;
+    color: rgb(255, 255, 255);
+    
+}
+.corpo{
+    border: 2px solid red;
+    padding: 3em 30px;
+    
+}
+.corpo-content{
+    border: 2px solid red;
+    text-align: center;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.corpo-content h3{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    color: #11a36a;
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 600; 
+}
+.corpo-content p{
+  margin-left: 14%;
+    width: 75%;
+    
+}
