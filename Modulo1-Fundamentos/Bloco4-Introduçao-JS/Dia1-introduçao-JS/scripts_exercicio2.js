@@ -47,11 +47,11 @@ if(sal <= 1557.94){
   salBruto = sal - (sal * 0.08);
   console.log(salBruto);
 }
-else if(sal > 1556.94 && sal < 2594.92){
+else if(sal <= 2594.92){
   salBruto = sal - (sal * 0.09);
   console.log(salBruto);
 }
-else if(sal > 2594.92 && sal < 5189.82){
+else if(sal <= 5189.82){
   salBruto = sal - (sal * 0.11);
   console.log(salBruto);
 }
@@ -60,15 +60,18 @@ else{
   console.log(salBruto);
 }
 // ------>IRRF<-----------
-if(salBruto > 1903.98 && salBruto < 2826.65){
+if(salBruto <= 1903.98){
+  console.log(salBruto);
+}
+else if(salBruto <= 2826.65){
   salLiq = salBruto - ((salBruto * 0.075) - 142.80);
   console.log(salLiq);
 }
-else if(salBruto > 2826.65 && salBruto < 3751.05){
+else if(salBruto <= 3751.05){
   salLiq = salBruto - ((salBruto * 0.15) - 354.80);
   console.log(salLiq);
 }
-else if(salBruto > 3751.05 && salBruto < 4664.68){
+else if(salBruto <= 4664.68){
   salLiq = salBruto - ((salBruto * 0.225) - 636.13);
   console.log(salLiq);
 }
