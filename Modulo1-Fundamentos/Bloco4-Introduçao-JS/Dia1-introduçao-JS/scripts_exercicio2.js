@@ -26,10 +26,10 @@ switch(xess.toUpperCase()){
     
 }
 // -------partee 4----------------
-const custo = 33;
-const venda = 41;
-const imp = 0.2;
-const lucro = (venda - (custo + (custo*imp)))*1000;
+const custo = 10;
+const venda = 20;
+const imp =0.2;
+const lucro = (venda - (custo*1.2))*1000;
 
 if(custo <= 0 || venda <= 0 || imp <= 0){
   console.log('ERRO');
