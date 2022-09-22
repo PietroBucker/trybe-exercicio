@@ -39,14 +39,20 @@ else{
 // 2.3
 const angA = 90;
 const angB = 45;
-const angC = 43;
-const triAng = (angA + angB + angC);
+const angC = -45;
 
-if(triAng == 180){
-  console.log(true);
+const triAng = (angA + angB + angC);
+const negativeAng = (angA < 0 || angB < 0 || angC < 0);
+
+if(!negativeAng){
+  if(triAng == 180){
+    console.log(true);
+  }
+  else{
+    console.log(false);
+  }
 }
 else{
-  console.log(false + " 'erro' ");
+  console.log('ERRO');
 }
-// --------parte 3-----------------
 
