@@ -25,6 +25,7 @@ h1{
     color: rgb(255, 255, 255);
     
 }
+/* corpo */
 .corpo{
     border: 2px solid red;
     padding: 3em 30px;
@@ -48,4 +49,28 @@ h1{
   margin-left: 14%;
     width: 75%;
     
+}
+img {
+    border-radius: 50%;
+    align-items: center;
+}
+#alunos_content {
+    
+    padding: 30px;
+    padding-top: 0;
+    text-align: center;
+    
+}
+.alunos {
+    width: 20%;
+    display: inline-block;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 14px;
+    text-align: center;
+    
+}
+h4 {
+    color: #11a36a;
 }
