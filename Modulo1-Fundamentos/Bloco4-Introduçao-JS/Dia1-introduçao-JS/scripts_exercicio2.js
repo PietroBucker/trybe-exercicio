@@ -38,4 +38,41 @@ else{
   console.log(lucro.toFixed(2));
 }
 
-
+// ----------parte 5-------------
+const sal = 3000;
+let salBruto = 0;
+let salLiq = 0;
+// --------->INSS<--------------
+if(sal <= 1557.94){
+  salBruto = sal - (sal * 0.08);
+  console.log(salBruto);
+}
+else if(sal > 1556.94 && sal < 2594.92){
+  salBruto = sal - (sal * 0.09);
+  console.log(salBruto);
+}
+else if(sal > 2594.92 && sal < 5189.82){
+  salBruto = sal - (sal * 0.11);
+  console.log(salBruto);
+}
+else{
+  salBruto = sal - (sal - 570.88);
+  console.log(salBruto);
+}
+// ------>IRRF<-----------
+if(salBruto > 1903.98 && salBruto < 2826.65){
+  salLiq = salBruto - ((salBruto * 0.075) - 142.80);
+  console.log(salLiq);
+}
+else if(salBruto > 2826.65 && salBruto < 3751.05){
+  salLiq = salBruto - ((salBruto * 0.15) - 354.80);
+  console.log(salLiq);
+}
+else if(salBruto > 3751.05 && salBruto < 4664.68){
+  salLiq = salBruto - ((salBruto * 0.225) - 636.13);
+  console.log(salLiq);
+}
+else{
+  salLiq = salBruto - ((salBruto * 0.275) - 869.36);
+  console.log(salLiq);
+}
