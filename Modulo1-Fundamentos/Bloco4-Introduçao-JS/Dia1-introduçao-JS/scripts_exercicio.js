@@ -36,5 +36,17 @@ else{
   console.log('zero');
 }
 
+// 2.3
+const angA = 90;
+const angB = 45;
+const angC = 43;
+const triAng = (angA + angB + angC);
+
+if(triAng == 180){
+  console.log(true);
+}
+else{
+  console.log(false + " 'erro' ");
+}
 // --------parte 3-----------------
 
