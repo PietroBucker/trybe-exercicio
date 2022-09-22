@@ -1,76 +1,84 @@
-body{
-    font-family: Montserrat, sans-serif;
+body {
+  font-family: Montserrat, sans-serif;
 }
-h1{
-    font-size: 45px;
-    font-weight: 600px;
-    line-height: 55px;
-    text-align: left;
-    color: rgb(255, 255, 255);
+h1 {
+  font-size: 45px;
+  font-weight: 600px;
+  line-height: 55px;
+  text-align: left;
+  color: rgb(255, 255, 255);
 }
-.header{
-    background-image: url("./imagem-market/smiling-image.jpg");
-    background-size: cover;
-    background-position: 50% 25%;
-    padding: 60px 30px 40px;
-    border: 2px solid red;
-
+.header {
+  background-image: url("./imagem-market/smiling-image.jpg");
+  background-size: cover;
+  background-position: 50% 25%;
+  padding: 60px 30px 40px;
+  border: 2px solid red;
 }
-.header-content{
-    border: 2px solid red;
-    width: 50%;
+.header-content {
+  border: 2px solid red;
+  width: 50%;
 }
-.header-content p{
-    width: 80%;
-    color: rgb(255, 255, 255);
-    
+.header-content p {
+  width: 80%;
+  color: rgb(255, 255, 255);
 }
 /* corpo */
-.corpo{
-    border: 2px solid red;
-    padding: 3em 30px;
-    
+.corpo {
+  padding: 3em 30px;
 }
-.corpo-content{
-    border: 2px solid red;
-    text-align: center;
-    margin-left: 70px;
-    margin-right: 70px;
+.corpo-content {
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
 }
-.corpo-content h3{
-    margin-top: 10px;
-    margin-bottom: 60px;
-    color: #11a36a;
-    font-size: 28px;
-    line-height: 42px;
-    font-weight: 600; 
+.corpo-content h3 {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  color: #11a36a;
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 600;
 }
-.corpo-content p{
+.corpo-content p {
   margin-left: 14%;
-    width: 75%;
-    
+  width: 75%;
 }
 img {
-    border-radius: 50%;
-    align-items: center;
+  border-radius: 50%;
+  align-items: center;
 }
 #alunos_content {
-    
-    padding: 30px;
-    padding-top: 0;
-    text-align: center;
-    
+  padding: 30px;
+  padding-top: 0;
+  text-align: center;
+  padding-bottom: 80px;
 }
 .alunos {
-    width: 20%;
-    display: inline-block;
-    align-items: center;
-    padding-left: 2em;
-    padding-right: 2em;
-    font-size: 14px;
-    text-align: center;
-    
+  width: 20%;
+  display: inline-block;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 14px;
+  text-align: center;
 }
 h4 {
-    color: #11a36a;
+  color: #11a36a;
+}
+/* secao 3 */
+#quem_somos {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 7em 30px;
+}
+.quem_somos_content {
+    width: 20%;
+    display: inline-block;
+}
+.quem_somos_content p {
+    display: block;
+}
+#quem_somos h3{
+    margin-bottom: 85px;
 }
