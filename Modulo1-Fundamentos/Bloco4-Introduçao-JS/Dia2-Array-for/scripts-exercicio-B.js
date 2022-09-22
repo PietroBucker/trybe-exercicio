@@ -1,12 +1,36 @@
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+const numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+// 1--------------
+// let maior = numbers
+// for(let i = 1 ; i < maior.length ; i++){
+//   for(let i2 = 0 ; i2 < i ; i2++){
+//     if(maior[i] < maior[i2]){
+//       let position = maior[i];
+//           maior[i] = maior[i2];
+//           maior[i2]= position;
+//     }
+//   }
+// }
+// console.log(maior);
 
-for(let i = 1 ; i < numbers.length ; i++){
-  for(let i2 = 0 ; i2 < i ; i2; i2++){
-    if(numbers[i] < numbers[i2]){
-      let position = numbers[i];
-          numbers[i] = numbers[i2];
-          numbers[i2]= position;
-    }
+// // 2----------------
+// let menor = numbers
+// for(let i = 1 ; i < menor.length ; i++){
+//   for(let i2 = 0 ; i2 < i ; i2++){
+//     if(menor[i] > menor[i2]){
+//       let position = menor[i];
+//           menor[i] = menor[i2];
+//           menor[i2]= position;
+//     }
+//   }
+// }
+//console.log(menor);
+// 3-----------------
+let mult =[];
+for(let i = 0 ; i < numbers.length ; i++){
+  if((numbers.length - 1) == i){
+    mult.push(numbers[i] * 2)
+    console.log(mult);
+    break;
   }
+  mult.push(numbers[i]* numbers[i+1])
 }
-console.log(numbers);
