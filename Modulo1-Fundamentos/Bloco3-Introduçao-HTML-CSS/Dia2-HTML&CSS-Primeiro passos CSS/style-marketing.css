@@ -1,0 +1,168 @@
+body {
+  font-family: Montserrat, sans-serif;
+}
+h1 {
+  font-size: 45px;
+  font-weight: 600px;
+  line-height: 55px;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+.header {
+  background-image: linear-gradient(
+   90deg, /*angulo do gradiente*/
+   rgba(0, 0, 0, 0.5), /* posicao inicial gradiente*/
+   rgba(0, 0, 0, 0.5)),/* posicao final do gradiente*/
+   url("./imagem-market/smiling-image.jpg");
+  background-size: cover;
+  background-position: 50% 25%;
+  padding: 60px 30px 40px;
+  
+}
+.header-content {
+  
+  width: 50%;
+}
+.header-content p {
+  width: 80%;
+  color: rgb(255, 255, 255);
+}
+/* corpo */
+.corpo {
+  padding: 3em 30px;
+}
+.corpo-content {
+  text-align: center;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.corpo-content h3 {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  color: #11a36a;
+  font-size: 28px;
+  line-height: 42px;
+  font-weight: 600;
+}
+.corpo-content p {
+  margin-left: 14%;
+  width: 75%;
+}
+img {
+  border-radius: 50%;
+  align-items: center;
+}
+#alunos_content {
+  padding: 30px;
+  padding-top: 0;
+  text-align: center;
+  padding-bottom: 80px;
+}
+.alunos {
+  width: 20%;
+  display: inline-block;
+  align-items: center;
+  padding-left: 2em;
+  padding-right: 2em;
+  font-size: 14px;
+  text-align: center;
+}
+.alunos h4{
+  color: #11a36a;
+}
+h3 {
+  color: #11a36a;
+  text-align: center;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 3em;
+}
+/* secao 3 */
+#quem_somos {
+  background-color: #f5f5f5;
+  padding: 7em 30px;
+  
+
+}
+.quem_somos_content {
+    width: 400px;
+    display: inline-block;
+    
+    margin: 2% 4% 6% 0;
+    padding: 2%;
+    border: 0px solid #ffffff;
+    box-shadow: 3px 3px 8px 0 #20382f;
+    text-align: center;
+    background-color: black;
+    flex-direction: column;
+}
+#quem_somos_menor {
+  width: 100%;
+  text-align: center;
+  
+}
+.quem_somos_content p {
+    
+    margin-top: 0;
+    display: block;
+    text-align: left;
+   
+}
+#quem_somos h4{
+    text-align: left;
+    margin-right: 30%;
+    width: auto;
+}
+#quem_somos img{
+    
+    display: inline-block;
+    margin-right: 2em;
+    text-align: left;
+    
+}
+.text_quem_somos {
+    
+    width: 70%;
+    display: inline-block;
+    
+}
+/* ----secao 4------- */
+.secao4{
+ 
+}
+#secao4_list {
+  margin-left: 20%;
+  display: inline-block;
+  text-align: center;
+  height: auto;
+  margin-bottom: 4em;
+  
+}
+#secao4_list li{
+  margin-bottom: 25px;
+  margin-top: 5px;
+  width: 70%;
+}
+#ultima_img{
+  text-align: center;
+}
+#ultima_img img{
+  border-radius: 0;
+  display: inline-block;
+}
+footer {
+  text-align: center;
+}
+footer a {
+  background: #11a36a;
+  padding: 15px 30px;
+  border-radius: 4px;
+  font-size: 16p;
+  font-weight: 1000;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  color: #f5f5f5;
+  box-shadow: inset 0 0 4px 2px rgb(161, 161, 161);
+  
+}
