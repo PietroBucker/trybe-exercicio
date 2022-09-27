@@ -45,3 +45,26 @@ function indexValMenor(value){
   
   }
   //console.log(indexValMenor([9, 2, 1, 5, 0, -7]));
+
+  //Exercicio-4 quantidade de caracteres.
+  function numberOfCaracteres(caracteres){
+  let aux = '';
+  let nome = '';  
+    for(let index = 0 ; index < caracteres.length ; index += 1){
+      aux = caracteres[index];
+      if(aux.length > nome.length){
+        nome = caracteres[index];
+      }
+    } 
+    return nome;
+  }
+  //console.log(numberOfCaracteres(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+  //Exercicio-5 numero repitido
+  function repetido(numebers){
+    for(let ind in numebers){
+      let aux = numebers[ind];
+      
+    }
+  }
+  console.log(repetido([2, 3, 2, 5, 8, 2, 3]));
