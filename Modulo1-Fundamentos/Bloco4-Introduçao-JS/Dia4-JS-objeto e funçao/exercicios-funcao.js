@@ -62,9 +62,19 @@ function indexValMenor(value){
 
   //Exercicio-5 numero repitido
   function repetido(numebers){
-    for(let ind in numebers){
-      let aux = numebers[ind];
-      
+  let numero = {}; 
+  let maior = 0;
+    for(let index = 0; index < numebers.length; index += 1){
+      let aux = numebers[index];
+      let cont = 0;
+        for(let jIndex = 0; jIndex < numebers.length; jIndex += 1){
+          if(aux === numebers[jIndex]){
+            cont += 1;
+          }
+        }
+        numero[aux] = cont;
     }
+    
+    return numero;
   }
   console.log(repetido([2, 3, 2, 5, 8, 2, 3]));
