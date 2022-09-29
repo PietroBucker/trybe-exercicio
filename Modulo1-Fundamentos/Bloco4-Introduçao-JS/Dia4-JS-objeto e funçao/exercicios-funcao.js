@@ -62,7 +62,7 @@ function indexValMenor(value){
 
   //Exercicio-5 numero repitido
   function repetido(numebers){
-  let numero = {}; 
+  let numeros = {}; 
   let maior = 0;
     for(let index = 0; index < numebers.length; index += 1){
       let aux = numebers[index];
@@ -72,9 +72,45 @@ function indexValMenor(value){
             cont += 1;
           }
         }
-        numero[aux] = cont;
+        numeros[aux] = cont;
     }
-    
-    return numero;
+    const maxVal = Math.max(...Object.values(numeros));
+    const found = Object.keys(numeros).find(key => numeros[key] === maxVal);
+    console.log(found); 
+    return;
   }
-  console.log(repetido([2, 3, 2, 5, 8, 2, 3]));
+  // console.log(repetido([2, 3, 2, 5, 8, 8, 8 , 2, 3]));
+
+  // -----------resultado do gabarito------------
+  // function repetido(numbers){
+  //   let numeros = 0; 
+  //   let maior = 0;
+  //     for(let index = 0; index < numbers.length; index += 1){
+  //       let aux = numbers[index];
+  //       let cont = 0;
+  //         for(let jIndex = 0; jIndex < numbers.length; jIndex += 1){
+  //           if(aux === numbers[jIndex]){
+  //             cont += 1;
+  //           }
+  //         }
+  //         if(cont > maior){
+  //           maior = cont;
+  //           numeros = index;
+  //         }
+  //     }
+  //     return numbers[numeros];
+  //   }
+  //   console.log(repetido([2, 3, 2, 5, 8, 8, 8 , 2, 3]));
+
+  // exercicio 6
+
+  function sum(n){
+  let result = 0;
+  for(let i = 0; i < n.length; i += 1){
+    if(n[i] >= 0){
+      result += n[i];
+    }
+  } 
+  return result;
+  }
+  console.log(sum([1,2,3,4,-5]));
