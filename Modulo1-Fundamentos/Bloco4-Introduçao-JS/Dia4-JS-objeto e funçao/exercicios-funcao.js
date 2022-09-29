@@ -113,4 +113,18 @@ function indexValMenor(value){
   } 
   return result;
   }
-  console.log(sum([1,2,3,4,-5]));
+ // console.log(sum([1,2,3,4,-5]));
+
+//exercicio 7
+function verificaFimPalavra(word, verificador){
+  const verifica = word.slice(-verificador.length);
+ 
+    if (verifica === verificador){
+      return true;
+    }
+    else{
+      return false;
+    }
+  
+}
+console.log(verificaFimPalavra('trybe', 'be'));
