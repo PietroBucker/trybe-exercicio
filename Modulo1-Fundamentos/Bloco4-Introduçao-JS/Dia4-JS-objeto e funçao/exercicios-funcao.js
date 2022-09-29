@@ -118,7 +118,6 @@ function indexValMenor(value){
 //exercicio 7
 function verificaFimPalavra(word, verificador){
   const verifica = word.slice(-verificador.length);
- 
     if (verifica === verificador){
       return true;
     }
