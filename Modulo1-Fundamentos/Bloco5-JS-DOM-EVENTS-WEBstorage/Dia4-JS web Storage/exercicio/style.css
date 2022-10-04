@@ -7,7 +7,7 @@ main{
 }
 
 #text-content{
-  
+  height: 100%;
   width: 50%;
   margin: auto;
   text-align: center;
@@ -23,8 +23,11 @@ section{
 }
 p{
   
-  width: 89%;
+  width: 100%;
   margin: auto;
   margin-bottom: 10px;
   text-align: justify;
+}
+#sessao-paragrafo{
+  margin-right: 20px;
 }

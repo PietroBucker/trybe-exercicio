@@ -48,7 +48,7 @@ setTextColorStorage()
 // tamanho da fonte
 function fontsSize(){
   let phraseText  = inputFs.value;
-  let fontSize = main.style.fontSize = phraseText + 'px';
+  let fontSize = paragraph.style.fontSize = phraseText + 'px';
   localStorage.setItem('fontSize', fontSize);
 }
 inputFs.addEventListener('change', fontsSize);
@@ -62,7 +62,7 @@ setFontSizeStorage()
 //tipo dee fonte
 function fontsFamily(){
   let phraseText  = inputFf.value;
-  let fontsFamily = main.style.fontFamily = phraseText;
+  let fontsFamily = paragraph.style.fontFamily = phraseText;
   localStorage.setItem('fontFamily', fontsFamily);
 }
 inputFf.addEventListener('change', fontsFamily);
@@ -74,7 +74,17 @@ function setFontFamilyStorage(){
 setFontFamilyStorage();
 
 //espaçamento do texto.
+function linesSpace(){
+  let phraseText = inputLs.value;
+  let lineSpace = paragraph.style.lineHeight = phraseText +'px';
+  localStorage.setItem('lineSpace', lineSpace);
+}
+inputLs.addEventListener('change', linesSpace);
 
-
+function setLineSpaceStorage(){
+  let getLs = localStorage.getItem('lineSpace');
+  paragraph.style.lineHeight = getLs;
+}
+setLineSpaceStorage()
 }
 
