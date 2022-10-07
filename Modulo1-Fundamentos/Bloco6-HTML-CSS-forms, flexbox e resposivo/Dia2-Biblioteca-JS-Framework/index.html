@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.2.2-dist/css/bootstrap.rtl.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header id="titulo" class="container text-center">
+      <h1 class="display-3">Formulario Exemplo</h1>
+    </header>
+
+    <form
+      action=""
+      method="GET"
+      enctype="multipart/form-data"
+      id="form"
+      class="container mb-3"
+    >
+      <div class="container mb-3">
+        <h2 class="display-6">Usuario e Senha</h2>
+        <label class="form-label" for="nome-completo">Nome Completo </label>
+        <input class="form-control" type="text" id="nome-completo" required />
+      </div>
+
+      <div class="container mb-3">
+        <label class="form-label" for="e-mail">E-MAIL</label>
+        <input
+          class="form-control"
+          type="text"
+          id="e-mail"
+          min="10"
+          max="40"
+          required
+        />
+      </div>
+
+      <div class="container mb-3">
+        <label class="form-label" for="input-estado">Destino Favorito</label>
+
+        <select class="form-select" name="estado" id="input-estado">
+          <option value="cidadee">Cidade</option>
+          <option value="campo">Campo</option>
+          <option value="praia">Praia</option>
+          <option value="montanha">Montanha</option>
+        </select>
+      </div>
+
+      <div class="container mb-3">
+        <p class="display-6">Porque voce deveria se a ganhadora?</p>
+        <textarea class="form-control"
+          name="respota"
+          id="resposta-area"
+          cols="30"
+          rows="5"
+          maxlength="10"
+        ></textarea>
+      </div>
+<!-- data -->
+      <div class="container mb-3">
+        <label class="" for="data">Melhor data para viagem</label>
+        <input id="" class="" type="date" id="data" />
+        <input type="text" id="datepicker" value="9 Oct 2014">
+      </div>
+      <div class="">
+        <input class="form-check-input" type="checkbox" id="Oportunidade" />
+        <label class="form-check-label" for="Oportunidade">
+          ostaria de receber outras incríveis oportunidades oferecidas pela
+          Trybe?
+        </label>
+      </div>
+      <div class="container mb-3">
+        <input class="form-check-input" type="checkbox" id="uso-imagen-ferias" />
+        <label class="form-check-label" for="uso-imagen-ferias">
+          Concordo que imagens das minhas férias poderão ser usadas na
+          divulgação de concursos futuros.
+        </label>
+      </div>
+      <div class="container">
+      <button class="btn btn-success mb-3" type="submit" id="botao-envia">Enviar Formulario</button>
+      </div>
+    </form>
+    <script src="pikaday.js"></script>
+    <script src="moment.js"></script>
+    <script src="pikaday.js"></script>
+    <script>
+        var picker = new Pikaday({
+            field: document.getElementById('datepicker'),
+            format: 'D MMM YYYY',
+            onSelect: function() {
+                console.log(this.getMoment().format('Do MMMM YYYY'));
+            }
+        });
+    </script>
+  </body>
+</html>
