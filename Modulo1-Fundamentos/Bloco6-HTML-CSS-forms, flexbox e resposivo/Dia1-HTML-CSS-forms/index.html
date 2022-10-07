@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="titulo">Formulario Exemplo</h1>
+    <form action="" method="GET" enctype="multipart/form-data">
+      <div>
+        <label for="nome-completo">Nome Completo </label>
+        <input type="text" id="nome-completo" required />
+      </div>
+      <div>
+        <label for="e-mail">E-MAIL</label>
+        <input type="text" id="e-mail" min="10" max="40" required />
+      </div>
+      <div>
+        <label for="input-estado">Destino Favorito</label>
+        <select name="estado" id="input-estado">
+          <option value="cidadee">Cidade</option>
+          <option value="campo">Campo</option>
+          <option value="praia">Praia</option>
+          <option value="montanha">Montanha</option>
+        </select>
+      </div>
+      <div>
+        <p>Porque voce deveria se a ganhadora?</p>
+        <textarea
+          name="respota"
+          id="resposta-area"
+          cols="30"
+          rows="5"
+          maxlength="10"
+        ></textarea>
+      </div>
+      
+      <div>
+        <label for="data">Melhor data para viagem</label>
+        <input type="date" id="data" />
+      </div>
+      <div>
+        <input type="checkbox" id="Oportunidade" />
+        <label for="Oportunidade">
+          ostaria de receber outras incríveis oportunidades oferecidas pela
+          Trybe?
+        </label>
+      </div>
+      <div>
+        <input type="checkbox" id="uso-imagen-ferias" />
+        <label for="uso-imagen-ferias">
+          Concordo que imagens das minhas férias poderão ser usadas na
+          divulgação de concursos futuros.
+        </label>
+      </div>
+      <button type="submit" id="botao-envia">Enviar Formulario</button>
+    </form>
+  </body>
+</html>
