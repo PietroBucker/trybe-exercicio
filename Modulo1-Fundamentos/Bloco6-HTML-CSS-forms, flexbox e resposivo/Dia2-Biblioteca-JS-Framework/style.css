@@ -1,0 +1,12 @@
+body{
+max-width: 80%;
+margin: 40px auto;
+background-color: green;
+}
+
+header, form{
+  background-color: azure;
+}
+#data, .form-select{
+  width: 40%;
+}
