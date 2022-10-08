@@ -23,9 +23,33 @@ const weekDaysList = document.querySelector('.week-days');
 function addDayList (){
 for(let index = 0 ; index < decemberDaysList.length; index += 1){
 let weekDayUl = document.createElement('li')
+weekDayUl.className = 'day';
+holiday(decemberDaysList[index], weekDayUl);
+friday(decemberDaysList[index], weekDayUl)
 weekDayUl.innerText = decemberDaysList[index];
+
+
+
 weekDaysList.appendChild(weekDayUl);
 }
 }
 addDayList ()
-sasd
+
+function holiday(day, li) {
+  if(day === 24 || day === 25 || day === 31){
+    li.className = 'day holiday';
+  }
+}
+function friday(day, li) {
+  if(day === 4 || day === 11 || day === 18 || day === 25){
+    li.className = 'day friday';
+  }
+}
+function criaButton() {
+  const buttonContainer = document.querySelector('.buttons-container');
+  const buttonFeriados = document.createElement('button');
+  buttonFeriados.className = 'btn-holiday';
+  buttonFeriados.innerText = 'Feriados'
+  buttonContainer.appendChild(buttonFeriados);
+}
+criaButton()
