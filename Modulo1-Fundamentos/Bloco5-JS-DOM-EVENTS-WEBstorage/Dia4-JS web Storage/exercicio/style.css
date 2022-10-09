@@ -1,0 +1,33 @@
+body{
+  
+}
+main{
+  
+  padding: 30px;
+}
+
+#text-content{
+  height: 100%;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+h1{
+text-align: center;
+
+}
+section{
+  
+  width: 40%;
+  display: inline-block;
+}
+p{
+  
+  width: 100%;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+#sessao-paragrafo{
+  margin-right: 20px;
+}
