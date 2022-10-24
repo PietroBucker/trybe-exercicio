@@ -3,4 +3,4 @@ const sumFixAmount = (amount) => {
 }
 
 const initialSum = sumFixAmount(15)
-console.log(initialSum(5));
+console.log(initialSum(5));s
