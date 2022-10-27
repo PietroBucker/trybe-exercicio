@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* header */
+header{
+  border: 2px solid red;
+  background-color: rgb(95, 129, 160);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+header p {
+  font-size: 40px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  width: 90%;
+  justify-content: space-between;
+  margin: auto;
+}
+
+nav ul li {
+  padding-left: 10px;
+  margin-bottom: 1%;
+}
+/* INFO CAPITULOS */
+/* aside one */
+.aside-one {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  margin-left: 1%;
+  width: 97%;
+}
+h2{
+ margin-left: 2%;
+}
+
+
+/* aside two */
+.aside-two {
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  margin-left: 1%;
+  width: 97%;
+}
+/* TEXTO PRINCIPAL */
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid red;
+  margin-left: 1%;
+  width: 97%;
+  text-align: justify;
+  padding: 2%;
+}
