@@ -40,6 +40,7 @@ console.log(addTrunoLesson2(lesson2, 'truno', 'noite'));
 //   return Object.values(param)
 // }
 // console.log(listValues(lesson1));
+
 const allLessons = {};
 Object.assign(allLessons, {lesson1}, {lesson2}, {lesson3});
 console.log(allLessons);
@@ -53,20 +54,12 @@ const numberOfStudents = () => {
 }
 console.log(numberOfStudents())
 
-
-const keys = Object.keys(allLessons);
-const values = Object.values(allLessons.lesson1);
-
-console.log(keys);
-console.log(values);
-
 function teste (obj, num) {
   console.log(Object.values(obj)[num])
   
 }
 teste(lesson2, 0);
 
-console.log('------------------------------')
 
 const verifyPair = (obj, key, value) => {
   const entries = Object.entries(obj);
@@ -77,3 +70,26 @@ const verifyPair = (obj, key, value) => {
   return isEqueal;
 }
 console.log(verifyPair(lesson1, 'materia', 'Matemátia'));
+
+console.log('------------------------------')
+
+const numberOfStudentsMatematic = (obj, name) => {
+  let allLesson = [];
+  let allStudents = 0;
+  for (const key in obj) {
+    if (obj[key].materia === 'Matemática') {
+      allStudents += obj[key].numeroEstudantes;
+      allLesson.push(obj[key].materia);
+    }
+  }
+  return {materia: allLesson, alunos: allStudents};
+}
+
+function getInfo (allLessons, name) {
+  const obj = {
+    professor: name,
+  }
+  Object.assign(obj, numberOfStudentsMatematic(allLessons, name))
+  return obj;
+}
+console.log(getInfo(allLessons, 'Maria Clara'));
