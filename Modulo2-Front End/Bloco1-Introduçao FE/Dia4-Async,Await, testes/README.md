@@ -1,0 +1,1 @@
+Link para codigo magic card https://github.com/tryber/sd-027-a-exercise-magic-card/pull/20
